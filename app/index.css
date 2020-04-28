@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+#app {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.grid {
+	text-align: center;
+	color: white;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto auto;
+	column-gap: 10px;
+	row-gap: 10px;
+	background-color: lightgray;
+	width: fit-content;
+	align-self: center;
+}
+
+.card {
+	text-align: center;
+	width: 8em;
+	height: 9em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	color: black;
+	overflow: hidden;
+}
+
+#title {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 4em;
+}
+
+#CardText {
+	font-family: 'Roboto', sans-serif;
+	font-size: 6em;
+}
+
+#winningScreen{
+	font-size: 124px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#restartButton {
+	position: relative;
+	width: 25em;
+	height: 4vh;
+	font-size: 25px;
+	background: aliceblue;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 13px;
+}
+
+#winningContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#mainContainer{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 29px;
+	border-radius: 44px;
+	width: fit-content;
+	height: fit-content;
+}
+
+#score {
+	text-align: right;
+	font-size: 3em;
+	width: 50%;
+	border-radius: 10px;
+	font-family: 'Roboto', sans-serif;
+	border: black;
+}
+
+#moveset {
+	color: #ff4f55;
+}
+
+#menu {
+	text-align: center;
+	display: flex;
+}
+
+#preRestart {
+	width: 50%;
+	border-radius: 10px;
+	font-size: 3em;
+	background: white;
+	border: white;
+}
