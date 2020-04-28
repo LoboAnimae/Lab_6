@@ -109,7 +109,7 @@ function Memory(){
 	if(gameStatus.card1State != 0 && gameStatus.card2State != 0 && gameStatus.card1State != gameStatus.card2State){
 		console.log('Not equal!')
 		{setTimeout(()=>{
-			tempArray = gameStatus.shownCards
+			let tempArray = gameStatus.shownCards
 			tempArray[gameStatus.card1Position - 1] = 0
 			tempArray[gameStatus.card2Position - 1] = 0
 			setGameStatus(
@@ -147,7 +147,7 @@ function Memory(){
 	}
 	// Take a turn
 	function takeTurn(position, cardClicked){
-		tempArray = gameStatus.shownCards
+		let tempArray = gameStatus.shownCards
 		tempArray[position-1] = 1
 		// Change state of first card
 		if(gameStatus.card1State == 0){
@@ -211,7 +211,10 @@ function Memory(){
 				</div> <br />
 				<button onClick={restartGame} id="restartButton"> Restart </button> 
 			</div>}
-		</div>
+            <div id='attribution'>
+            Image by <a href="https://pixabay.com/users/AnnaliseArt-7089643/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4939905">Annalise Batista</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4939905">Pixabay</a>
+            </div>
+        </div>
 	)
 }
 
@@ -236,4 +239,4 @@ function Card(props){
 
 ReactDOM.render(
 	<Memory />,
-	document.getElementById('app'))
+    document.getElementById('app'))
