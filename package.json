@@ -3,21 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ]
-  },
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+	"build": "webpack"
   },
   "keywords": [],
-  "author": "",
+  "author": "Andres Quan",
   "license": "ISC",
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+	"@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+	"babel-loader": "^8.1.0",
+	"webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
