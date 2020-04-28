@@ -83,7 +83,7 @@ body {
     height: fit-content;
     background-color: white;
     border: 5px solid black;
-    
+    margin-top: 15px;
 }
 
 #score {
@@ -109,7 +109,8 @@ body {
 	border-radius: 10px;
 	font-size: 3em;
 	background: white;
-	border: white;
+    border: white;
+    text-align: left;
 }
 
 #attribution {
